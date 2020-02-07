@@ -43,6 +43,7 @@ $(function()
 		name: "Em Gì Ơi",
 		url: "Musics/Em Gì Ơi - Jack x K-ICM.m4a",
 		picture: "https://static-zmp3.zadn.vn/skins/zma-2019/images/decuv2/emgioi.jpg"
+		
 	},
 	{
 		artist: "Jack (G5R)",
