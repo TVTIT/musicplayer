@@ -104,13 +104,14 @@ $(function()
     {
         setTimeout(function()
         {
+		albumArt.find('img').attr('src', currArtwork);
             if(audio.paused)
             {
                 playerTrack.addClass('active');
                 albumArt.addClass('active');
                 checkBuffering();
                 i.attr('class','fas fa-pause');
-				albumArt.find('img').attr('src', currArtwork);
+		albumArt.find('img').attr('src', currArtwork);
                 audio.play();
             }
             else
