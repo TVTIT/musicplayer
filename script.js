@@ -43,7 +43,6 @@ $(function()
 		name: "Em Gì Ơi",
 		url: "Musics/Em Gì Ơi - Jack x K-ICM.m4a",
 		picture: "https://static-zmp3.zadn.vn/skins/zma-2019/images/decuv2/emgioi.jpg"
-		
 	},
 	{
 		artist: "Jack (G5R)",
@@ -99,19 +98,19 @@ $(function()
 		return a;
 	}
 	songs = shuffle(songs);
-
+    
     function playPause()
     {
         setTimeout(function()
         {
-		albumArt.find('img').attr('src', currArtwork);
+            
             if(audio.paused)
             {
                 playerTrack.addClass('active');
                 albumArt.addClass('active');
                 checkBuffering();
                 i.attr('class','fas fa-pause');
-		albumArt.find('img').attr('src', currArtwork);
+				
                 audio.play();
             }
             else
@@ -121,6 +120,7 @@ $(function()
                 clearInterval(buffInterval);
                 albumArt.removeClass('buffering');
                 i.attr('class','fas fa-play');
+                
                 audio.pause();
             }
         },300);
@@ -129,6 +129,7 @@ $(function()
     	
 	function showHover(event)
 	{
+	    
 		seekBarPos = sArea.offset(); 
 		seekT = event.clientX - seekBarPos.left;
 		seekLoc = audio.duration * (seekT / sArea.outerWidth());
@@ -175,6 +176,7 @@ $(function()
 
     function updateCurrTime()
 	{
+	    albumArt.find('img').attr('src', currArtwork);
         nTime = new Date();
         nTime = nTime.getTime();
 
@@ -272,7 +274,7 @@ $(function()
 			currAlbum = songs[currIndex].name;
             currTrackName = songs[currIndex].artist;
             currArtwork = songs[currIndex].picture;
-			// albumArt.find('img').attr('src', currArtwork);
+			
 
             audio.src = songs[currIndex].url;
             
