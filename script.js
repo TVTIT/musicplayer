@@ -72,7 +72,7 @@ $(function()
 		artist: "Phan Duy Anh",
 		name: "Từng Yêu",
 		url: "Musics/Từng Yêu - Phan Duy Anh.m4a",
-		picture: "https://lh3.googleusercontent.com/proxy/zoSH09zZ_oAoJWRcLNUU7BmV7WmFwZNP9BW6UpzVYwarw20WrqLVf7ivpPMM3EaUVCwcO1LokhOdlO2kErKZS0BuN8Oh84_AXTB30UVY0jh1HX9KR5veSXlJH4_QgV05stQ"
+		picture: "https://avatar-nct.nixcdn.com/song/2019/07/03/7/5/b/e/1562146897414_500.jpg"
 	},
 	{
 		artist: "Nhật Phong, Đình Dũng",
