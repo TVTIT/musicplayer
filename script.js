@@ -176,7 +176,17 @@ $(function()
 
     function updateCurrTime()
 	{
-	    albumArt.find('img').attr('src', currArtwork);
+		albumArt.find('img').attr('src', currArtwork);
+	    if(!audio.paused)
+        {
+            document.head.getElementsByTagName('title')[0].text = songs[currIndex].name;
+			var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+			link.type = 'image/x-icon';
+			link.rel = 'shortcut icon';
+			link.href = songs[currIndex].picture;
+			document.getElementsByTagName('head')[0].appendChild(link);
+			
+        }
         nTime = new Date();
         nTime = nTime.getTime();
 
